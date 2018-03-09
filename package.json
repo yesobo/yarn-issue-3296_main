@@ -1,0 +1,12 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dep2": "https://github.com/yesobo/yarn-issue-3296_dep2.git#1.0.1",
+    "unpublished": "https://github.com/yesobo/yarn-issue-3296_dep1.git#^2.0.0",
+    "vue": "https://github.com/vuejs/vue.git#^2.0.0"
+  },
+  "flat": true
+}

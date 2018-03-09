@@ -1,0 +1,52 @@
+Arguments: 
+  /home/yesobo/.nvm/versions/node/v8.6.0/bin/node /home/yesobo/.nvm/versions/node/v8.6.0/bin/yarn install
+
+PATH: 
+  /home/yesobo/.nvm/versions/node/v8.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.6.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "main",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "dep2": "https://github.com/yesobo/yarn-issue-3296_dep2.git#1.0.1",
+      "unpublished": "https://github.com/yesobo/yarn-issue-3296_dep1.git#^2.0.0",
+      "vue": "https://github.com/vuejs/vue.git#^2.0.0"
+    },
+    "flat": true,
+    "resolutions": {
+      "unpublished": "1.0.0",
+      "vue": "2.0.0",
+      "source-map": "0.5.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: No valid versions found for "unpublished". The package may be unpublished.
+      at new MessageError (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at Function.<anonymous> (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:51415:15)
+      at Generator.next (<anonymous>)
+      at step (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:116:14
+      at Promise (<anonymous>)
+      at F (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:23451:28)
+      at Function.<anonymous> (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:95:12)
+      at Function.findVersionInRegistryResponse (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:51461:19)
+      at NpmResolver.<anonymous> (/home/yesobo/.nvm/versions/node/v8.6.0/lib/node_modules/yarn/lib/cli.js:51479:28)
